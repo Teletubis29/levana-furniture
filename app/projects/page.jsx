@@ -1,6 +1,11 @@
+"use client";
 import Image from "next/image";
+import { useState, useEffect } from "react";
+import { FaArrowUp } from "react-icons/fa";
 
 export default function Projects() {
+  const [showButton, setShowButton] = useState(false);
+
   const projects = [
     {
       id: 1,
@@ -308,9 +313,33 @@ export default function Projects() {
     },
   ];
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        //scroll 300px
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    };
+
+    //  event listener scroll
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="">
-      <div className="bg-[url('/our-project/12.webp')] bg-center bg-cover ">
+      <div className="bg-[url('/our-project/12.png')] bg-center bg-cover ">
         <h1 className="container py-64 text-5xl sm:text-5xl md:text-6xl font-semibold tracking-widest text-white drop-shadow-[2px_2px_4px_rgba(0,0,0,0.7)] relative -top-10">
           OUR PROJECTS
         </h1>
@@ -319,24 +348,37 @@ export default function Projects() {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="relative overflow-hidden rounded-xl group"
+            className="relative overflow-hidden rounded-xl group shadow-lg hover:shadow-2xl transition-shadow duration-300"
           >
-            <div>
+            {/* Container Image dengan efek zoom saat hover */}
+            <div className="transform transition-transform duration-500 group-hover:scale-105">
               <Image
                 src={project.image}
                 width={480}
                 height={380}
                 alt=""
-                className="w-full"
+                className="w-full rounded-xl"
               />
             </div>
-            <div className="absolute bottom-0 flex-col items-center justify-end w-full gap-32 p-12 text-xl text-white transition duration-300 ease-in-out translate-y-full bg-gradient-to-b from-transparent to-white group-hover:translate-y-0">
-              {/* <h1 className="text-2xl font-semibold">{project.name}</h1> */}
-              {/* <p className="py-4 ">{project.description}</p> */}
+
+            {/* Overlay yang muncul dari bawah dengan efek fade */}
+            <div className="absolute bottom-0 flex-col items-center justify-end w-full p-6 text-xl text-white bg-gradient-to-t from-black/60 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out">
+              {/* <h1 className="text-2xl font-semibold">{project.name}</h1>
+              <p className="py-4 text-sm">{project.description}</p> */}
             </div>
           </div>
         ))}
       </div>
+      {/* Button Up */}
+      {showButton && (
+        <button
+          onClick={scrollToTop}
+          className="fixed bottom-6 right-6 p-3 rounded-full bg-gray-800 bg-opacity-75 hover:bg-opacity-100 text-white shadow-lg hover:shadow-xl transition-all duration-300"
+          aria-label="Kembali ke atas"
+        >
+          <FaArrowUp className="text-xl" />
+        </button>
+      )}
     </div>
   );
 }

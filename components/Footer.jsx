@@ -102,10 +102,10 @@ export default function Footer() {
             <p>&copy;2024 LEVANA LIVING.All rights reserved </p>
           </div>
           <div className="">
-            {/* <Link className="p-4 hover:underline" href="/privacy">
+            <Link className="p-4 hover:underline" href="/privacy">
               Privacy
             </Link>
-            <Link className="p-4 hover:underline" href="/terms">
+            {/* <Link className="p-4 hover:underline" href="/terms">
               Terms
             </Link> */}
           </div>

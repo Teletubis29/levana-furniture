@@ -4,7 +4,7 @@ import VidioSection from "@/components/VidioSection";
 export default function About() {
   return (
     <div>
-      <div className="bg-[url('/our-project/10.webp')] bg-center bg-cover ">
+      <div className="bg-[url('/our-project/10.png')] bg-center bg-cover ">
         <h1 className="container py-32 text-5xl sm:text-5xl md:text-6xl font-semibold tracking-widest text-center text-white  drop-shadow-[2px_2px_4px_rgba(0,0,0,0.7)] relative -top-10 lg:py-64 lg:text-left ">
           WHO ARE WE?
         </h1>
