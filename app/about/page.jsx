@@ -1,5 +1,6 @@
 import Image from "next/image";
 import VidioSection from "@/components/VidioSection";
+import CustomOrderSection from "@/components/CustomOrderSection";
 
 export default function About() {
   return (
@@ -43,6 +44,9 @@ export default function About() {
               </p>
             </div>
           </div>
+        </div>
+        <div>
+          <CustomOrderSection/>
         </div>
         <div className="items-center lg:flex gap-x-8">
           <div className=""></div>

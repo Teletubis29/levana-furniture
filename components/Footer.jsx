@@ -18,6 +18,9 @@ export default function Footer() {
                 Products
               </Link>
               <Link className="py-1 hover:underline" href="/contact">
+                Custom Order
+              </Link>
+              <Link className="py-1 hover:underline" href="/contact">
                 Card Contact
               </Link>
             </div>
