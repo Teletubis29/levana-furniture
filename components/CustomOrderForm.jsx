@@ -35,7 +35,7 @@ const CustomOrderForm = () => {
     emailjs
       .send(serviceId, templateId, formData, publicKey)
       .then(() => {
-        setSuccessMessage("Pesanan kustom Anda berhasil dikirim!");
+        setSuccessMessage("Your form has been successfully sent to Levana Living");
         setFormData({
           name: "",
           email: "",
@@ -49,7 +49,7 @@ const CustomOrderForm = () => {
       })
       .catch(() => {
         setErrorMessage(
-          "Terjadi kesalahan saat mengirim pesanan. Silakan coba lagi."
+          "An error occurred while sending the order. Please try again."
         );
       })
       .finally(() => setIsSubmitting(false));

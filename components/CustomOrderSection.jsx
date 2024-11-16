@@ -37,7 +37,7 @@ const CustomOrderSection = () => {
               width={800}
               height={500}
               alt=""
-              className="absolute right-0 xl:h-[448px] xl:w-[700px] lg:h-[344px] lg:w-[500px]  hidden lg:block rounded-3xl"
+              className=" right-0 xl:h-[448px] xl:w-[700px] lg:h-[344px] lg:w-[500px]  hidden lg:block rounded-3xl"
             />
           </div>
         </div>

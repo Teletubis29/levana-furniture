@@ -14,7 +14,7 @@ export default function About() {
         <h1 className="text-3xl font-bold my-4 md:my-8 text-center">
           Our Factory
         </h1>
-        <VidioSection videoId="NHJ_L82nBp4"/>
+        <VidioSection videoId="NHJ_L82nBp4" />
       </div>
       <div className="container ">
         <div className="py-4 lg:py-8">
@@ -45,9 +45,11 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div>
-          <CustomOrderSection/>
-        </div>
+      </div>
+      <div>
+        <CustomOrderSection />
+      </div>
+      <div className="container">
         <div className="items-center lg:flex gap-x-8">
           <div className=""></div>
           <div className=""></div>
