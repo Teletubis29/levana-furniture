@@ -348,7 +348,7 @@ export default function Projects() {
         {projects.map((project) => (
           <div
             key={project.id}
-            className="relative overflow-hidden rounded-xl group shadow-lg hover:shadow-2xl transition-shadow duration-300"
+            className="relative overflow-hidden group shadow-lg hover:shadow-2xl transition-shadow duration-300"
           >
             {/* Container Image dengan efek zoom saat hover */}
             <div className="transform transition-transform duration-500 group-hover:scale-105">
@@ -357,7 +357,7 @@ export default function Projects() {
                 width={480}
                 height={380}
                 alt=""
-                className="w-full rounded-xl"
+                className="w-full "
               />
             </div>
 

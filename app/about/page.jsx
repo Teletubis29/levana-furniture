@@ -22,14 +22,16 @@ export default function About() {
             We have great idea for Interior & Exterior
           </h2>
           <div className="flex flex-col text-center lg:flex-row lg:text-left items-center lg:items-stretch space-y-4 lg:space-y-0 lg:space-x-8">
-            <Image
-              src="/our-project/14.webp"
-              width={400}
-              height={400}
-              alt="Timeless Craftsmanship"
-              className="rounded-2xl"
-            />
-            <div className="flex flex-col justify-center  lg:w-1/2">
+            <div className="overflow-hidden group">
+              <Image
+                src="/our-project/14.webp"
+                width={400}
+                height={400}
+                alt="Timeless Craftsmanship"
+                className="transform transition-transform duration-300 group-hover:scale-110"
+              />
+            </div>
+            <div className="flex flex-col justify-center lg:w-1/2">
               <p className="text-2xl font-medium">
                 Timeless Craftsmanship,
                 <br />
@@ -54,8 +56,8 @@ export default function About() {
           <div className=""></div>
           <div className=""></div>
         </div>
-        <div className="py-8">
-          <div className="bg-slate-100 rounded-2xl">
+        <div className="bg-white rounded-2xl">
+          <div className="py-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 p-8">
               <div>
                 <Image
@@ -63,7 +65,7 @@ export default function About() {
                   width={700}
                   height={700}
                   alt=""
-                  className="rounded-xl overflow-hidden"
+                  className=" overflow-hidden"
                 />
                 <h2 className="text-xl font-bold mb-2 text-gray-800 mt-4">
                   Craftsmanship
@@ -79,7 +81,7 @@ export default function About() {
                   width={700}
                   height={700}
                   alt=""
-                  className="rounded-xl overflow-hidden"
+                  className=" overflow-hidden"
                 />
                 <h2 className="text-xl font-bold mb-2 text-gray-800 mt-4">
                   Durability
@@ -95,7 +97,7 @@ export default function About() {
                   width={700}
                   height={700}
                   alt=""
-                  className="rounded-xl overflow-hidden"
+                  className=" overflow-hidden"
                 />
                 <h2 className="text-xl font-bold  text-gray-800 mt-4">
                   Global Partnership

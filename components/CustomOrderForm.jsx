@@ -59,7 +59,7 @@ const CustomOrderForm = () => {
     <>
       <div className="container">
         <div>
-          <p className="text-lg font-bold mt-2">Welcome to Levana Living!</p>
+          <p className="text-2xl font-bold mt-2">Welcome to Levana Living!</p>
           <p className="mt-4">
             We&apos; re excited to help you create the furniture of your dreams,
             perfectly suited to your style and needs. Levana Living offers
