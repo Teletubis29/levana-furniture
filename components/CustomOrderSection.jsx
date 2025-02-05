@@ -25,10 +25,13 @@ const CustomOrderSection = () => {
               Make Your Dream Furniture a Reality!
             </p>
             <Link href="/custom-order" passHref>
-              <button className="relative inline-flex items-center px-8 py-2 text-white rounded-md shadow-lg bg-black hover:bg-gray-800 hover:ring-2 hover:ring-gray-950 ring-offset-2 animate-pulse focus:outline-none focus:ring-4 focus:ring-blue-950">
+              <button
+                className="relative inline-flex items-center px-8 py-2 text-white text-xl rounded-md shadow-lg bg-black focus:outline-none 
+  animate-[pulse_1.5s_infinite] from-black to-red-700 bg-gradient-to-r bg-[length:100%_100%] hover:ring-2 hover:ring-gray-950 ring-offset-2"
+              >
                 Order Custom Now
                 <TbArrowUpRight className="w-5 h-5 ml-2 transform transition-transform group-hover:translate-x-1" />
-                <span className="absolute inset-0 rounded-md bg-blue-950 opacity-20 blur-md animate-glow"></span>
+                <span className="absolute inset-0 rounded-md bg-red-900 opacity-20 blur-md"></span>
               </button>
             </Link>
           </div>

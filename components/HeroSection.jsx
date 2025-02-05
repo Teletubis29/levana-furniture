@@ -26,7 +26,7 @@ export default function HeroSection() {
             collaboration opportunities.
           </p>
           <Link
-            href="https://wa.me/628119695999?text=Halo%20saya%20ingin%20menghubungi%20Anda,%20Bisa%20Bantu%20saya%20LEVANA?"
+            href="https://wa.me/6281282793443?text=Halo%20saya%20ingin%20menghubungi%20Anda,%20Bisa%20Bantu%20saya%20LEVANA?"
             passHref
           >
             <button className="inline-flex items-center px-8 py-2 text-white rounded-full shadow-lg bg-gray-950 hover:bg-gray-800 hover:ring-2 hover:ring-gray-950 ring-offset-2 ">
