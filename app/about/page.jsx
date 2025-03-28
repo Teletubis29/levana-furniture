@@ -10,12 +10,12 @@ export default function About() {
           WHO ARE WE?
         </h1>
       </div>
-      <div className="container md:px-6 mx-auto p-4">
+      {/* <div className="container md:px-6 mx-auto p-4">
         <h1 className="text-3xl font-bold my-4 md:my-8 text-center">
           Our Factory
         </h1>
         <VidioSection videoId="NHJ_L82nBp4" />
-      </div>
+      </div> */}
       <div className="container ">
         <div className="py-4 lg:py-8">
           <h2 className="p-4 text-3xl font-semibold text-center lg:p-16 lg:text-5xl">
